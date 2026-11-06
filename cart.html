@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belanja Kuyyy</title>
+    <link rel="stylesheet" href="stylerev.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" width="70" height="70" class="logo">
+                <span class="font-logo"><strong class="fg-info fs-lg">Belanja</strong> <em
+                        class="kuy-font fs-lg">Kuyy</em></span>
+            </a>
+    
+            <!-- Search Bar -->
+            <div class="input-group w-50 mx-auto d-none d-md-flex">
+                <input type="text" class="form-control bg-light border-end-0" placeholder="Temukan barang impianmu...">
+                <button class="btn btn-warning border-start-0 px-4" type="button"><i class="bi bi-search"></i></button>
+            </div>
+    
+            <!-- Menu Akun & Keranjang -->
+            <div class="d-flex align-items-center gap-4">
+                <a href="login.html" class="text-decoration-none text-dark d-flex align-items-center gap-1">
+                    <i class="bi bi-person fs-5"></i> Akun
+                </a>
+                <a href="cart.html" class="text-decoration-none text-warning d-flex align-items-center gap-1">
+                    <i class="bi bi-cart fs-5"></i> Keranjang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content: Keranjang Belanja -->
+    <div class="container my-5">
+        <h3 class="fw-bold mb-4">Keranjang Belanja</h3>
+
+        <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
+
+            <!-- Tabel Header (Desktop) -->
+            <div class="row text-muted small fw-semibold pb-3 border-bottom d-none d-md-flex">
+                <div class="col-md-5">Produk</div>
+                <div class="col-md-2 text-center">Harga</div>
+                <div class="col-md-3 text-center">Jumlah</div>
+                <div class="col-md-2 text-end">Subtotal</div>
+            </div>
+
+            <!-- Item 1: TWS Bluetooth Earphone -->
+            <div class="row align-items-center py-3 border-bottom">
+                <div class="col-md-5 d-flex align-items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=100"
+                        class="rounded-3 border object-fit-cover" style="width: 70px; height: 70px;" alt="TWS">
+                    <div>
+                        <h6 class="fw-semibold text-dark mb-1">TWS Bluetooth Earphone</h6>
+                        <span class="text-muted text-decoration-line-through small">Rp 169.000</span>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center fw-medium text-secondary mt-2 mt-md-0">
+                    Rp 129.000
+                </div>
+                <div class="col-md-3 d-flex justify-content-center align-items-center my-3 my-md-0">
+                    <div class="input-group input-group-sm w-75">
+                        <button class="btn btn-outline-secondary px-2" type="button">-</button>
+                        <input type="text" class="form-control text-center bg-white" value="1" readonly>
+                        <button class="btn btn-outline-secondary px-2" type="button">+</button>
+                    </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-between justify-content-md-end align-items-center">
+                    <span class="fw-bold text-warning">Rp 129.000</span>
+                    <button class="btn btn-sm text-muted p-0 ms-3"><i class="bi bi-x-lg"></i></button>
+                </div>
+            </div>
+
+            <!-- Item 2: Smartwatch Sport -->
+            <div class="row align-items-center py-3 border-bottom">
+                <div class="col-md-5 d-flex align-items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=100"
+                        class="rounded-3 border object-fit-cover" style="width: 70px; height: 70px;" alt="Smartwatch">
+                    <div>
+                        <h6 class="fw-semibold text-dark mb-1">Smartwatch Sport</h6>
+                        <span class="text-muted text-decoration-line-through small">Rp 350.000</span>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center fw-medium text-secondary mt-2 mt-md-0">
+                    Rp 299.000
+                </div>
+                <div class="col-md-3 d-flex justify-content-center align-items-center my-3 my-md-0">
+                    <div class="input-group input-group-sm w-75">
+                        <button class="btn btn-outline-secondary px-2" type="button">-</button>
+                        <input type="text" class="form-control text-center bg-white" value="1" readonly>
+                        <button class="btn btn-outline-secondary px-2" type="button">+</button>
+                    </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-between justify-content-md-end align-items-center">
+                    <span class="fw-bold text-dark">Rp 299.000</span>
+                    <button class="btn btn-sm text-muted p-0 ms-3"><i class="bi bi-x-lg"></i></button>
+                </div>
+            </div>
+
+            <!-- Item 3: Sepatu Sneakers Pria -->
+            <div class="row align-items-center py-3 border-bottom">
+                <div class="col-md-5 d-flex align-items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=100"
+                        class="rounded-3 border object-fit-cover" style="width: 70px; height: 70px;" alt="Sepatu">
+                    <div>
+                        <h6 class="fw-semibold text-dark mb-1">Sepatu Sneakers Pria</h6>
+                        <span class="text-muted text-decoration-line-through small">Rp 299.000</span>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center fw-medium text-secondary mt-2 mt-md-0">
+                    Rp 249.000
+                </div>
+                <div class="col-md-3 d-flex justify-content-center align-items-center my-3 my-md-0">
+                    <div class="input-group input-group-sm w-75">
+                        <button class="btn btn-outline-secondary px-2" type="button">-</button>
+                        <input type="text" class="form-control text-center bg-white" value="1" readonly>
+                        <button class="btn btn-outline-secondary px-2" type="button">+</button>
+                    </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-between justify-content-md-end align-items-center">
+                    <span class="fw-bold text-dark">Rp 249.000</span>
+                    <button class="btn btn-sm text-muted p-0 ms-3"><i class="bi bi-x-lg"></i></button>
+                </div>
+            </div>
+
+            <!-- Bagian Bawah: Voucher & Total Pembayaran -->
+            <div class="row mt-4 align-items-center justify-content-between">
+
+                <!-- Input Voucher & Tombol Lanjut Belanja -->
+                <div class="col-lg-6 mb-3 mb-lg-0">
+                    <div class="input-group mb-3" style="max-width: 380px;">
+                        <input type="text" class="form-control bg-light" placeholder="Masukkan kode voucher">
+                        <button class="btn btn-warning px-4 fw-semibold text-dark" type="button">Gunakan</button>
+                    </div>
+                    <div>
+                        <a href="indexrev.html"
+                            class="text-decoration-none text-dark fw-semibold d-inline-flex align-items-center gap-1">
+                            <i class="bi bi-arrow-left"></i> Lanjut Belanja
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kotak Ringkasan Total Belanja -->
+                <div class="col-lg-5">
+                    <div class="card border-0 bg-light rounded-4 p-3">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-dark">Total Belanja</span>
+                            <span class="fw-bold fs-5 text-dark">Rp 677.000</span>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-warning fw-bold py-2 shadow-sm text-dark">
+                                Checkout <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

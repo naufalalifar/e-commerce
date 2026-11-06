@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belanja YUKKK</title>
+    <link rel="icon" type="" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+    <!--feather icon-->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <!--navbar start-->
+    <nav class="navbar navbar-expand-xs bg-white shadow-sm fixed-top">
+        <div class="container-fluid px-1 px-lg-4">
+    
+            <!-- LOGO -->
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="img/logo.png" alt="Logo Belanja YUKKK" class="logo">
+                <span class="fw-bold">Belanja <em class="brand-color">YUKKK</em></span>
+            </a>
+    
+                <form class="search-box d-flex flex-grow-1 mx-lg-4 my-3 my-lg-0" role="search">
+                    <input class="form-control border-0 shadow-none" type="search"
+                        placeholder="Temukan Barang Impianmu Di Sini..." aria-label="Cari barang">
+    
+                    <button class="btn btn-info text-white px-4" type="submit">
+                        <i class="bi bi-search"></i>
+                        <span class="d-lg-none">Cari</span>
+                    </button>
+                </form>
+    
+                <!-- KERANJANG DAN AKUN -->
+                <div class="navbar-right">
+                    <a href="#" id="Keranjang"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" id="akun"><i data-feather="user"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--banner end-->
+    <div class="navbar-btn">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i>Semua Kategori</a>
+    </div>
+ 
+    <!--hamburger menu end-->
+    
+    <!-- BANNER CAROUSEL -->
+    <main class="container-fluid banner-section">
+    
+        <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+    
+            <!-- INDIKATOR -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Banner 1"></button>
+    
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Banner 2"></button>
+    
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Banner 3"></button>
+    
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="3" aria-label="Banner 4"></button>
+    
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="4" aria-label="Banner 5"></button>
+    
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="5" aria-label="Banner 6"></button>
+            </div>
+    
+            <!-- GAMBAR BANNER -->
+            <div class="carousel-inner banner-frame">
+    
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="img/img1.png" class="banner-img" alt="Banner promosi Belanja YUKKK 1">
+                </div>
+    
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/img2.png" class="banner-img" alt="Banner promosi Belanja YUKKK 2">
+                </div>
+    
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/img3.png" class="banner-img" alt="Banner promosi Belanja YUKKK 3">
+                </div>
+    
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/img4.png" class="banner-img" alt="Banner promosi Belanja YUKKK 4">
+                </div>
+    
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/img5.png" class="banner-img" alt="Banner promosi Belanja YUKKK 5">
+                </div>
+    
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/img6.png" class="banner-img" alt="Banner promosi Belanja YUKKK 6">
+                </div>
+    
+            </div>
+    
+            <!-- TOMBOL SEBELUMNYA -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+            </button>
+    
+            <!-- TOMBOL BERIKUTNYA -->
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Berikutnya</span>
+            </button>
+    
+        </div>
+    </main>
+    
+    <!-- KEUNGGULAN TOKO -->
+    <section class="container benefits-section">
+        <div class="row g-3 text-center">
+    
+            <div class="col-6 col-md-3">
+                <div class="benefit-card">
+                    <i class="bi bi-truck"></i>
+                    <h6>Gratis Ongkir</h6>
+                    <p>Belanja lebih hemat</p>
+                </div>
+            </div>
+    
+            <div class="col-6 col-md-3">
+                <div class="benefit-card">
+                    <i class="bi bi-lightning-charge"></i>
+                    <h6>Pengiriman Cepat</h6>
+                    <p>Praktis dan mudah</p>
+                </div>
+            </div>
+    
+            <div class="col-6 col-md-3">
+                <div class="benefit-card">
+                    <i class="bi bi-shield-check"></i>
+                    <h6>Pembayaran Aman</h6>
+                    <p>Belanja lebih nyaman</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="benefit-card">
+                    <i class="bi bi-headset"></i>
+                    <h6>Customer Service</h6>
+                    <p>Siap membantu kamu</p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <!--kategori pilihan-->
+    <div class="container category">
+            <h2>Kategori Pilihan</h2>
+                <div class="d-flex gap-4">
+                    <a href="#elektronik">
+                        <img src="img/elektronik.png" alt="#">
+                    </a>
+                    <a href="">
+                        <img src="img/aksesoris.png" alt="#">
+                    </a>
+                    <a href="">
+                        <img src="img/fashion.png" alt="#">
+                    </a>
+                    <a href="">
+                        <img src="img/kecantikan.png" alt="#">
+                    </a>
+                    <a href="">
+                        <img src="img/komputer.png" alt="#">
+                    </a>
+                    <a href="">
+                        <img src="img/olahraga.png" alt="#">
+                    </a>
+                    <a href="">
+                        <img src="img/mainan.png" alt="#">
+                    </a>
+                    <a href="">
+                        <img src="img/rumah.png" alt="#">
+                    </a>
+                </div>
+    </div>
+    <!--kategori pilihan end-->
+
+    <!--Produk Terlaris-->
+    <section class="container produk-section">
+        <h2>Produk Terlaris</h2>
+        <div class="row g-3 text-center">
+    
+            <div class="col-6 col-md-3">
+                <div class="produk-card shadow-produk">
+                    <img src="img/produk1.png" alt="">
+                    <h6 class="my-2">TWS Bluetooth Earphone</h6>
+                    <div class="color-harga">
+                        <p><strong>Rp. 150.000</strong></p>
+                    </div>
+                    <p><i class="star bi bi-star-fill"></i>4.8 (1.2K)</p>
+                    <button class="btn-color">+ Keranjang</button>
+                </div>
+            </div>
+    
+            <div class="col-6 col-md-3">
+                <div class="produk-card shadow-produk">
+                    <img src="img/produk2.png" alt="">
+                    <h6 class="my-2">Smartwatch Sport</h6>
+                    <div class="color-harga">
+                        <p><strong>Rp. 150.000</strong></p>
+                    </div>
+                    <p><i class="star bi bi-star-fill"></i>4.8 (1.2K)</p>
+                    <button class="btn-color">+ Keranjang</button>
+                </div>
+            </div>
+    
+            <div class="col-6 col-md-3">
+                <div class="produk-card shadow-produk">
+                    <img src="img/produk3.png" alt="">
+                    <h6 class="my-2">Nike White</h6>
+                    <div class="color-harga">
+                        <p><strong>Rp. 150.000</strong></p>
+                    </div>
+                    <p><i class="star bi bi-star-fill"></i>4.8 (1.2K)</p>
+                    <button class="btn-color">+ Keranjang</button>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="produk-card shadow-produk">
+                    <img src="img/produk4.png" alt="">
+                    <h6 class="my-2">Tas Ransel Casual</h6>
+                    <div class="color-harga">
+                        <p><strong>Rp. 150.000</strong></p>
+                    </div>
+                    <p><i class="star bi bi-star-fill"></i>4.8 (1.2K)</p>
+                    <button class="btn-color">+ Keranjang</button>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    <!--Produk Terlaris end-->
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container text-center">
+            <h5>Belanja <span class="brand-color">YUKKK</span></h5>
+            <p>Belanja mudah, harga bersahabat.</p>
+            <small>© 2026 Belanja YUKKK. Hak cipta dilindungi.</small>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        } </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
